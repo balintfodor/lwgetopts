@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
+project(lwgetopts-sample CXX)
+include_directories(../)
+add_executable(sample sample.cpp)
+target_compile_features(sample PRIVATE cxx_range_for)

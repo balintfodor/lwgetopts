@@ -76,28 +76,4 @@ namespace lwgetopts {
 
 }
 
-// --- USAGE:
-// #include <iostream>
-// #include "lwgetopts.hpp"
-// #include <map>
-// #include <vector>
-// #include <string>
-
-// using namespace std;
-
-// int main(int argc, char *argv[])
-// {
-//     using namespace lwgetopts;
-//     ArgsMetaMap meta = {
-//         {"--help", {0, "print help", false}},
-//         {"--exp", {2, "set exp time, 0-1080", false}},
-//         {"--diff", {1, "produce difference image, -1 no threshold, otherwise 0-255", false}},
-//         {"--raw", {0, "produce raw image", false}}
-//     };
-//     auto args = parseArguments(argc, argv, meta);
-//     validateArguments(args, meta);
-//     printArguments(args);
-//     return 0;
-// }
-
 #endif // __lwargopts_hpp__
